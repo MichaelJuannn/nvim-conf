@@ -6,9 +6,9 @@ opt.wrap = true
 opt.breakindent = true
 opt.showbreak = string.rep(" ", 3) -- Make it so that long lines wrap smartly
 opt.linebreak = true
-vim.cmd([[
-    augroup BladeFileType
-        autocmd!
-        autocmd BufNewFile,BufRead *.blade.php set filetype=blade
-    augroup END
-]])
+
+vim.filetype.add({
+  pattern = {
+    [".*%.blade%.php"] = "blade",
+  },
+})
