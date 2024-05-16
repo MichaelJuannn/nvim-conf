@@ -6,6 +6,7 @@ return {
     "MunifTanjim/nui.nvim",
     "nvimtools/none-ls.nvim",
   },
+  enabled = false,
   cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
   keys = {
     -- { "<leader>la", ":Laravel artisan<cr>" },

@@ -1,5 +1,6 @@
 return {
   "ray-x/lsp_signature.nvim",
+  enabled = false,
   config = function(client, bufnr)
     require("lsp_signature").setup({
       floating_window = false,

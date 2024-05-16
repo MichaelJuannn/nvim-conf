@@ -1,4 +1,15 @@
 return {
-  "folke/noice.nvim",
-  enabled = false,
+  {
+    "folke/noice.nvim",
+    opts = {
+      lsp = {
+        hover = { silent = true },
+      },
+      cmdline = { view = "cmdline" },
+    },
+  },
+  -- {
+  --   "rcarriga/nvim-notify",
+  --   enabled = false,
+  -- },
 }

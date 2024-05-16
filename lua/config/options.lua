@@ -6,6 +6,7 @@ opt.wrap = true
 opt.breakindent = true
 opt.showbreak = string.rep(" ", 3) -- Make it so that long lines wrap smartly
 opt.linebreak = true
+opt.expandtab = false
 
 vim.filetype.add({
   pattern = {
