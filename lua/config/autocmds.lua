@@ -26,7 +26,3 @@ local filetypes = {
 require("lspconfig").phpactor.setup({
   filetypes = { "php", "blade" },
 })
-
-require("nvim-ts-autotag").setup({
-  filetypes = filetypes,
-})
