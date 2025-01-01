@@ -22,7 +22,3 @@ local filetypes = {
   "hbs",
   "blade",
 }
-
-require("lspconfig").phpactor.setup({
-  filetypes = { "php", "blade" },
-})

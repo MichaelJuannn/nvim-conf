@@ -15,8 +15,11 @@ vim.filetype.add({
   },
 })
 
-vim.lsp.buf.format({
-  filter = function(client)
-    return client.name ~= "vtsls"
-  end,
-})
+vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.lazyvim_python_ruff = "ruff"
+
+-- vim.lsp.buf.format({
+--   filter = function(client)
+--     return client.name ~= "vtsls"
+--   end,
+-- })
